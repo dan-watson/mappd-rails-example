@@ -6,4 +6,6 @@ RSpec.describe Post, type: :model do
   it { should have_db_column(:body).of_type(:text) }
   it { should have_db_column(:created_at).of_type(:datetime) }
   it { should have_db_column(:updated_at).of_type(:datetime) }
+
+  it { should belong_to(:author) }
 end
