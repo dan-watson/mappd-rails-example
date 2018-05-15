@@ -15,13 +15,14 @@ RUN apk add --virtual \
   build-deps \
   build-base \
   postgresql-dev \
+  sqlite-dev \
   libc-dev \
   linux-headers \
   libxml2-dev \
   libxslt-dev \
+  make \
   readline-dev && \
-  bundle install --jobs=2 && \
-  apk del build-deps
+  bundle install --jobs=2
 
 ENV APP_HOME /app
 COPY . $APP_HOME
