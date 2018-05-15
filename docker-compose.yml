@@ -4,7 +4,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    command: ./bin/unicorn
+    command: rails s
+    ports:
+      - "3000:3000"
     volumes:
       - .:/app
     depends_on:

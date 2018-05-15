@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'administrate'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -35,6 +36,7 @@ end
 group :test do
   gem 'capybara', '>= 2.15', '< 4.0'
   gem 'rspec-rails'
+  gem 'shoulda-matchers'
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
 end
