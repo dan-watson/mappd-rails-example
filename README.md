@@ -1,24 +1,26 @@
-# README
+# Ruby On Rails Engineer Challenge
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Prerequisites
 
-Things you may want to cover:
+* Docker Community Edition - https://www.docker.com/community-edition
+* Make - https://www.gnu.org/software/make/
 
-* Ruby version
+## Setup
 
-* System dependencies
+* `make` will build the application ready for use.
 
-* Configuration
+## Server
 
-* Database creation
+* `make serve` runs the web app on http://localhost:3000
 
-* Database initialization
+## Code Linting
 
-* How to run the test suite
+* `make lint` this runs code linting
 
-* Services (job queues, cache servers, search engines, etc.)
+## Code Testing - Run all the specs
 
-* Deployment instructions
+* `make rspec` this runs rspec.
 
-* ...
+## Guard
+
+* `make guard` run both linting and testing whilst watching files
