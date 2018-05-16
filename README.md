@@ -1,4 +1,6 @@
-# Ruby On Rails Engineer Challenge
+# Mappd Rails Example
+
+An example of using `mappd` inside a rails application with `administrate`
 
 ## Prerequisites
 
